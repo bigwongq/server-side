@@ -1,0 +1,433 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Lecture11 - Virtualization · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="codeing.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    [Lecture11]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="lecture11.html">
+            
+                <a href="lecture11.html">
+            
+                    
+                    Lecture11 - Virtualization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="codeing.html">
+            
+                <a href="codeing.html">
+            
+                    
+                    codeing_11
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Lecture11 - Virtualization</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="lecture11-&#x2013;-virtualization">Lecture11 &#x2013; Virtualization</h1>
+<h2 id="basic-concepts-of-virtualization">Basic Concepts of Virtualization</h2>
+<h3 id="virtualization--cloud-computing">Virtualization &amp; Cloud Computing</h3>
+<blockquote>
+<p>Virtualization is an enabling Technology for cloud computing. Majority of high-performing clouds is powered by a virtualized infrastructure.</p>
+</blockquote>
+<p>Because </p>
+<ol>
+<li>Virtualization makes it possible to</li>
+</ol>
+<blockquote>
+<ul>
+<li>run many operating systems
+simultaneously on a single 
+machine</li>
+</ul>
+</blockquote>
+<ol>
+<li>Using this method, </li>
+</ol>
+<blockquote>
+<ul>
+<li><p>a single physical instance of a resource or application may be shared by several users,</p>
+</li>
+<li><p>allowing them to access several computers simultaneously.</p>
+</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="virtualization-vs-cloud-computing">Virtualization VS. Cloud Computing</h3>
+<blockquote>
+<h4 id="virtualization-abstracts">Virtualization abstracts</h4>
+<ol>
+<li>compute resources typically as virtual machines (VMs)</li>
+</ol>
+</blockquote>
+<ol>
+<li>with associated storage and networking connectivity.</li>
+</ol>
+<blockquote>
+<h3 id="cloud-computing-determines">Cloud Computing determines</h3>
+</blockquote>
+<ol>
+<li><p>how those virtualized resources</p>
+</li>
+<li><p>are allocated, delivered, and presented.</p>
+</li>
+</ol>
+<p>Virtualization is not necessary to create a cloud environment, but it enables rapid scaling of resources in a way that non-virtualized environments find hard to achieve.</p>
+<hr>
+<h3 id="what-is-virtualization">What is Virtualization?</h3>
+<blockquote>
+<p>The term virtualization broadly describes</p>
+<ol>
+<li>the separation of a resource or request for a service </li>
+<li>from the underlying physical delivery of that service.</li>
+</ol>
+</blockquote>
+<h3 id="virtualization-infrastructure">Virtualization Infrastructure</h3>
+<blockquote>
+<p>Virtualization Infrastructure provides </p>
+<ul>
+<li>a layer of abstraction between computing (CPUs), storage and networking 
+hardware, and the application running on it.</li>
+</ul>
+<p>Benefits:</p>
+<ul>
+<li>Deployment of virtual infrastructure is non-disruptive and the user experience is 
+largely unchanged.</li>
+</ul>
+</blockquote>
+<ul>
+<li><p>Gives administrators the advantage of managed pooled resources across the 
+enterprise</p>
+</li>
+<li><p>Allows IT managers to be more responsive to dynamic organizational needs and to 
+better leverage infrastructure investmen</p>
+</li>
+</ul>
+<hr>
+<h3 id="virtualization-architectures">Virtualization Architectures</h3>
+<blockquote>
+<h3 id="type-1-hypervisor-bare-metal-architecture">Type 1: Hypervisor (bare-metal) architecture</h3>
+</blockquote>
+<p> A Type1 hypervisor, a software layer (handles virtualization tasks), is 
+directly installed onto the hardware.</p>
+<ul>
+<li><p>Hypervisor can discover and virtualize the system&apos;s available CPU, 
+memory and other resources.</p>
+</li>
+<li><p>Hypervisor can create a virtual image of the system&apos;s resources, which it 
+can then provision to create independent VMs. </p>
+</li>
+<li><p>Every VM remains completely isolated and independent of every other VM. </p>
+</li>
+<li><p>No VM within a system shares resources with or even has awareness of any 
+other VM on that system.</p>
+</li>
+</ul>
+<blockquote>
+<h3 id="type-2-hosted-architecture">Type 2: Hosted Architecture</h3>
+</blockquote>
+<ul>
+<li><p>The system first installs the host OS on the hardware</p>
+</li>
+<li><p>Then Hosted Hypervisors or Type 2 hypervisors are installed -- such 
+as VMware Workstation, KVM or Oracle VirtualBox -- atop that OS.</p>
+</li>
+<li><p>Similar to bare-metal virtualization, </p>
+</li>
+<li><ol>
+<li>Every VM created is isolated from every other VM. </li>
+</ol>
+</li>
+<li><ol>
+<li>VMs in a hosted system run in memory and the system can save or load them 
+as disk files to protect, restore or duplicate the VM as desired.</li>
+</ol>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Type 1 hypervisor</strong></th>
+<th><strong>Type 2 hypervisor</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Also known as</strong></td>
+<td>Bare metal hypervisor.</td>
+<td>Hosted hypervisor.</td>
+</tr>
+<tr>
+<td><strong>Runs on</strong></td>
+<td>Underlying physical host machine hardware.</td>
+<td>Underlying operating system (host OS).</td>
+</tr>
+<tr>
+<td><strong>Best suited for</strong></td>
+<td>Large, resource-intensive, or fixed-use workloads.</td>
+<td>Desktop and development environments.</td>
+</tr>
+<tr>
+<td><strong>Can it negotiate dedicated resources?</strong></td>
+<td>Yes.</td>
+<td>No.</td>
+</tr>
+<tr>
+<td><strong>Knowledge required</strong></td>
+<td>System administrator-level knowledge.</td>
+<td>Basic user knowledge.</td>
+</tr>
+<tr>
+<td><strong>Examples</strong></td>
+<td>VMware ESXi, Microsoft Hyper-V, KVM.</td>
+<td>Oracle VM VirtualBox, VMware Workstation, Microsoft Virtual PC.</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="codeing.html" class="navigation navigation-next navigation-unique" aria-label="Next page: codeing_11">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Lecture11 - Virtualization","level":"1.2.1","depth":2,"next":{"title":"codeing_11","level":"1.2.2","depth":2,"path":"lecture11/codeing.md","ref":"./lecture11/codeing.md","articles":[]},"previous":{"title":"[Lecture11]","level":"1.2","depth":1,"ref":"","articles":[{"title":"Lecture11 - Virtualization","level":"1.2.1","depth":2,"path":"lecture11/lecture11.md","ref":"./lecture11/lecture11.md","articles":[]},{"title":"codeing_11","level":"1.2.2","depth":2,"path":"lecture11/codeing.md","ref":"./lecture11/codeing.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lecture11/lecture11.md","mtime":"2024-12-01T10:06:32.394Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-12-01T10:59:18.120Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,468 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>codeing_11 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="lecture11.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    [Lecture11]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="lecture11.html">
+            
+                <a href="lecture11.html">
+            
+                    
+                    Lecture11 - Virtualization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="codeing.html">
+            
+                <a href="codeing.html">
+            
+                    
+                    codeing_11
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >codeing_11</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="development-for-docker-apps">Development for Docker Apps</h1>
+<blockquote>
+<h3 id="docker">Docker</h3>
+<ul>
+<li>Docker is an open-source platform for building, deploying, and 
+managing containerized applications.</li>
+</ul>
+<h3 id="after-installation--commonly-used-docker-commands">After installation ~ Commonly Used Docker Commands</h3>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Docker Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>docker --version</code></td>
+<td>Find the installed docker version</td>
+</tr>
+<tr>
+<td><code>docker pull &lt;image&gt;</code></td>
+<td>Pull the docker image from dockerhub (docker repository)</td>
+</tr>
+<tr>
+<td><code>docker build -t &quot;&lt;your-docker-id&gt;/&lt;image&gt;&quot; .</code></td>
+<td>Create your image</td>
+</tr>
+<tr>
+<td><code>docker images</code></td>
+<td>List all the docker images on the system</td>
+</tr>
+<tr>
+<td><code>docker run --env &lt;image&gt;</code></td>
+<td>Run the docker image and create a docker container</td>
+</tr>
+<tr>
+<td><code>docker ps -a</code></td>
+<td>List all the docker containers running/exited/stopped</td>
+</tr>
+<tr>
+<td><code>docker stop &lt;container_id/name&gt;</code></td>
+<td>Stop a container</td>
+</tr>
+<tr>
+<td><code>docker restart &lt;container_id/name&gt;</code></td>
+<td>Restart the docker container</td>
+</tr>
+<tr>
+<td><code>docker rm -f &lt;container_id/name&gt;</code></td>
+<td>Remove the docker container by force</td>
+</tr>
+<tr>
+<td><code>docker rmi &lt;image_id/name&gt;</code></td>
+<td>Remove the docker image</td>
+</tr>
+<tr>
+<td><code>docker login</code></td>
+<td>Login into docker hub</td>
+</tr>
+<tr>
+<td><code>docker push your-docker-id/&lt;image&gt;</code></td>
+<td>Upload a docker image on the dockerhub</td>
+</tr>
+<tr>
+<td><code>docker logout</code></td>
+<td>Logging out from dockerhub</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<h3 id="1-and-2-dockerfile-commands">1 and 2. DockerFile Commands</h3>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>Command</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>FROM</code></td>
+<td>Specify the base image for your container.</td>
+</tr>
+<tr>
+<td></td>
+<td>E.g., using the node base image with the desired version:</td>
+</tr>
+<tr>
+<td></td>
+<td><code>FROM node:&lt;version&gt;-alpine</code></td>
+</tr>
+<tr>
+<td><code>COPY</code></td>
+<td>Copy files and directories from the host system into the container image.</td>
+</tr>
+<tr>
+<td></td>
+<td>E.g., copying <code>server.js</code> into the container:</td>
+</tr>
+<tr>
+<td></td>
+<td><code>COPY server.js /</code></td>
+</tr>
+<tr>
+<td><code>RUN</code></td>
+<td>Execute shell commands during the image build process.</td>
+</tr>
+<tr>
+<td></td>
+<td>E.g., using npm to install the express module:</td>
+</tr>
+<tr>
+<td></td>
+<td><code>RUN npm install express</code></td>
+</tr>
+<tr>
+<td><code>EXPOSE</code></td>
+<td>Declare the ports on which the container listens for incoming connections (for documentation purposes).</td>
+</tr>
+<tr>
+<td></td>
+<td>E.g., <code>EXPOSE 8099</code></td>
+</tr>
+<tr>
+<td><code>ENTRYPOINT</code></td>
+<td>Define an executable that always runs, making it harder to override.</td>
+</tr>
+<tr>
+<td></td>
+<td>E.g., <code>ENTRYPOINT [&quot;node&quot;]</code></td>
+</tr>
+<tr>
+<td><code>CMD</code></td>
+<td>Specify the default command to run when a container is started. Override it by providing a command when running the container.</td>
+</tr>
+<tr>
+<td></td>
+<td>E.g., <code>CMD [&quot;server.js&quot;]</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<h3 id="3-build-the-image">3. Build the image</h3>
+<p>  <code>docker build -t &lt;your-image-name&gt; .</code></p>
+<ul>
+<li><your-image-name> is the name you want to give the image.</your-image-name></li>
+</ul>
+</blockquote>
+<ul>
+<li><code>.</code> denotes the current directory.</li>
+</ul>
+<blockquote>
+<h3 id="4-run-the-container">4. Run the container</h3>
+<p><code>docker run -d -p 8080:80 nginx</code> </p>
+<ul>
+<li><strong><code>docker run</code></strong>: Start and run a new container.</li>
+<li><strong><code>-d</code></strong>: Run the container in the background (detached mode).</li>
+<li><strong><code>-p 8080:80</code></strong>: Map port 8080 on the host to port 80 in the container.<ul>
+<li><strong>Host Port</strong>: 8080</li>
+<li><strong>Container Port</strong>: 80</li>
+</ul>
+</li>
+<li><strong><code>nginx</code></strong>: Use the Docker image named <code>nginx</code> to create the container.</li>
+</ul>
+<h3 id="5-testing">5. Testing</h3>
+<h3 id="6-push-the-image-to-docker-hub">6. Push the image to Docker Hub</h3>
+<h3 id="7-clear-the-local-image-and-container">7. Clear the local image and container</h3>
+<p><code>docker ps -a</code></p>
+</blockquote>
+<p><code>docker rm -f &lt;your container ID&gt;</code></p>
+<p><code>docker ps -a</code></p>
+<p><code>docker images</code></p>
+<p><code>docker rmi &lt;your image ID&gt;</code></p>
+<p><code>docker images</code></p>
+<blockquote>
+<h3 id="appendix-i-useful-commands">Appendix I: Useful Commands</h3>
+</blockquote>
+<ol>
+<li><h3 id="clean-ubuntu">Clean Ubuntu</h3>
+<p><code>df-h</code>  </p>
+<p><code>sudo apt autoremove--purge snapd</code></p>
+</li>
+<li><h3 id="docker-install">Docker Install</h3>
+<p><code>sudo apt install docker-compose</code>  </p>
+<p><code>sudo docker images</code>  </p>
+<p><code>sudo docker ps-a</code>  </p>
+<p><code>docker stop container_name</code></p>
+</li>
+</ol>
+<ol>
+<li><h3 id="docker-images-remove">Docker Images remove</h3>
+<code>docker system prune -a</code></li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="lecture11.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Lecture11 - Virtualization">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"codeing_11","level":"1.2.2","depth":2,"previous":{"title":"Lecture11 - Virtualization","level":"1.2.1","depth":2,"path":"lecture11/lecture11.md","ref":"./lecture11/lecture11.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lecture11/codeing.md","mtime":"2024-12-01T10:57:44.910Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-12-01T10:59:18.120Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
